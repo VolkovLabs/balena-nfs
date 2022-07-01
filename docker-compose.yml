@@ -1,6 +1,18 @@
 version: "2"
 
 services:
-  ui:
-    image: bh.cr/maggie0002/balena-device-ui
+  #  ui:
+  #    image: bh.cr/maggie0002/balena-device-ui
+  #    network_mode: host
+
+  grafana:
+    image: ghcr.io/volkovlabs/app:latest
     network_mode: host
+    restart: always
+    labels:
+      io.balena.features.supervisor-api: "1"
+    volumes:
+      - grafana-data:/var/lib/grafana
+
+volumes:
+  grafana-data:
