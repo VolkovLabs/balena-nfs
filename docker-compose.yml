@@ -4,6 +4,9 @@ services:
   ui:
     image: ghcr.io/maggie0002/bdu:latest
     network_mode: host
+    labels:
+      io.balena.features.supervisor-api: "1"
+      io.balena.features.balena-api: "1"
 
   grafana:
     image: ghcr.io/volkovlabs/app:latest
