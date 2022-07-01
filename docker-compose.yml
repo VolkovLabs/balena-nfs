@@ -1,9 +1,9 @@
 version: "2"
 
 services:
-  #  ui:
-  #    image: bh.cr/maggie0002/balena-device-ui
-  #    network_mode: host
+  ui:
+    image: ghcr.io/maggie0002/bdu:latest
+    network_mode: host
 
   grafana:
     image: ghcr.io/volkovlabs/app:latest
