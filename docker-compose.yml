@@ -1,0 +1,6 @@
+version: "2"
+
+services:
+  ui:
+    image: bh.cr/maggie0002/balena-device-ui
+    network_mode: host
