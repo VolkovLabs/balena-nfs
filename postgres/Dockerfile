@@ -1,7 +1,6 @@
-FROM timescale/timescaledb:2.4.2-pg13
+FROM postgres:alpine
 
 ## Environment
-ENV TIMESCALEDB_TELEMETRY=off
 ENV POSTGRES_PASSWORD=postgres
 ENV UDEV=1
 
