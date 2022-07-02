@@ -21,7 +21,7 @@ services:
       io.balena.features.procfs: "1"
 
   grafana:
-    image: ghcr.io/volkovlabs/balena-app:latest
+    image: bh.cr/volkovlabs/balena-app
     network_mode: host
     restart: always
     labels:
