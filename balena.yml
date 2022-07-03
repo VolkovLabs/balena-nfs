@@ -3,11 +3,11 @@ version: 1.0.0
 joinable: false
 type: sw.application
 description: >-
-  The Balena NFS project demonstrate how to deploy NFS server and client in balenaCloud.
+  The Balena NFS project demonstrate how to deploy NFS Server and Client in balenaCloud.
 post-provisioning: >-
   ## Introduction
 
-  The Balena NFS project demonstrate how to deploy NFS server and client in balenaCloud. Read more in the Balena blog (Using NFS Server to share external storage between containers)[https://www.balena.io/blog/using-nfs-server-to-share-external-storage-between-containers-balena/].
+  The Balena NFS project demonstrate how to deploy NFS Server and Client in balenaCloud. Read more in the Balena blog [Using NFS Server to share external storage between containers](https://www.balena.io/blog/using-nfs-server-to-share-external-storage-between-containers-balena/).
 
   ![Diagram](https://raw.githubusercontent.com/volkovlabs/balena-nfs/main/img/balena-nfs.png)
 
@@ -16,21 +16,19 @@ post-provisioning: >-
 
   ## Features
 
-  - Includes NFS Server build on top of the PostgreSQL Alpine image using OpenRC to manage NFS services.
-  - Supports various environment variables to specify storage label, mount point, etc.
-  - Includes NFS Client build on top of the NGINX Alpine image using custom Entrypoint script to mount NFS export.
-  - Provides Grafana Dashboard to manage running services and display configuration using Supervisor API. Default Grafana username and password is **admin/admin**.
+    - Includes NFS Server build on top of the PostgreSQL Alpine image using OpenRC to manage NFS services.
+    - Supports various environment variables to specify storage label, mount point, etc.
+    - Includes NFS Client build on top of the NGINX Alpine image using custom Entrypoint script to mount NFS export.
+    - Provides Grafana Dashboard to manage running services and display configuration using Supervisor API. Default Grafana username and password is **admin/admin**.
 
   ## Environment Variables
 
-  | Environment Variable | Value                     | Description                                                     |
-  | -------------------- | ------------------------- | --------------------------------------------------------------- |
-  | STORAGE_LABEL        | storage                   | External Storage Id, if not found `tmpfs` will be used instead. |
-  | STORAGE_MOUNT_POINT  | /mnt/nvme                 | Local Mount Point to mount Storage or `tmpfs`.                  |
-  | POSTGRES_PASSWORD    | postgres                  | Password for the PostgreSQL.                                    |
-  | PGDATA               | /mnt/nvme/postgresql/data | PostgreSQL Path on the Storage or `tmpfs`.                      |
-  | NFS_MOUNT_POINT      | /mnt/nvme                 | NFS Mount Point to mount NFS export.                            |
-  | NFS_HOST             | localhost                 | NFS Host, should be `localhost` for the local container.        |
+    - STORAGE_LABEL (storage) - External Storage Id, if not found `tmpfs` will be used instead.
+    - STORAGE_MOUNT_POINT (/mnt/nvme) - Local Mount Point to mount Storage or `tmpfs`.
+    - POSTGRES_PASSWORD (postgres) - Password for the PostgreSQL.
+    - PGDATA (/mnt/nvme/postgresql/data) - PostgreSQL Path on the Storage or `tmpfs`.
+    - NFS_MOUNT_POINT (/mnt/nvme) - NFS Mount Point to mount NFS export.
+    - NFS_HOST (localhost) - NFS Host, should be `localhost` for the local container.
 
 assets:
   repository:
