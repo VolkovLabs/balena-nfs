@@ -7,3 +7,4 @@
 - Initial release
 - Add NFS Server and Client (#1)
 - Use Postgres instead of TimescaleDb (#2)
+- Add Balena Project and update README (#3)
