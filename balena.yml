@@ -7,7 +7,7 @@ description: >-
 post-provisioning: >-
   ## Introduction
 
-  The Balena NFS project demonstrate how to deploy NFS server and client in balenaCloud.
+  The Balena NFS project demonstrate how to deploy NFS server and client in balenaCloud. Read more in the Balena blog (Using NFS Server to share external storage between containers)[https://www.balena.io/blog/using-nfs-server-to-share-external-storage-between-containers-balena/].
 
   ![Diagram](https://raw.githubusercontent.com/volkovlabs/balena-nfs/main/img/balena-nfs.png)
 
