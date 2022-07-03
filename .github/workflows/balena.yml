@@ -1,4 +1,4 @@
-name: Balena Development
+name: Balena
 
 on:
   push:
@@ -17,4 +17,4 @@ jobs:
         uses: Theia-Scientific/balena-cli@v2
         with:
           balena_api_token: ${{secrets.BALENA_TOKEN}}
-          balena_command: "push ${{secrets.BALENA_DEVELOPMENT_FLEET_NAME}}"
+          balena_command: "push volkovlabs/balena-nfs"
