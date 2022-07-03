@@ -1,4 +1,4 @@
-# Balena NFS
+# Balena NFS Server and Client Project
 
 ![Diagram](https://raw.githubusercontent.com/volkovlabs/balena-nfs/main/img/balena-nfs.png)
 
@@ -7,7 +7,7 @@
 
 ## Introduction
 
-The Balena NFS project demonstrate how to deploy NFS server and client in balenaCloud. Read more in the Balena blog (Using NFS Server to share external storage between containers)[https://www.balena.io/blog/using-nfs-server-to-share-external-storage-between-containers-balena/].
+The Balena NFS project demonstrate how to deploy NFS Server and Client in balenaCloud. Read more in the Balena blog [Using NFS Server to share external storage between containers](https://www.balena.io/blog/using-nfs-server-to-share-external-storage-between-containers-balena/).
 
 ### Requirements
 
