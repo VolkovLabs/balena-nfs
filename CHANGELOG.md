@@ -1,5 +1,12 @@
 # Change Log
 
+## 1.1.0 (IN PROGRESS)
+
+### Features / Enhancements
+
+- Fix some wording and typos in README (#5)
+- Update balena.yml according to README (#6)
+
 ## 1.0.0 (2022-07-03)
 
 ### Features / Enhancements
