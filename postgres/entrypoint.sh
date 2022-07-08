@@ -46,7 +46,6 @@ echo "${STORAGE_MOUNT_POINT} *(fsid=0,rw,sync,no_subtree_check,all_squash,anonui
 
 modprobe nfs
 modprobe nfsd
-modprobe nfsv3
 
 ## NFS Server
 rm -rf /run/*

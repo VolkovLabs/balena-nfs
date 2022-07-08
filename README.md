@@ -11,7 +11,8 @@ The Balena NFS project demonstrates how to deploy the NFS Server and Client in b
 
 ### Requirements
 
-- balenaOS 2.98 is required.
+- balenaOS 2.99.27+rev1 is required for NFS4.
+- balenaOS 2.98 is required for NFS3.
 
 ## balenaCloud
 
@@ -28,14 +29,15 @@ The Balena NFS project can be deployed directly to balenaCloud:
 
 ## Environment Variables
 
-| Environment Variable | Value                     | Description                                                     |
-| -------------------- | ------------------------- | --------------------------------------------------------------- |
-| STORAGE_LABEL        | storage                   | External Storage ID, if not found `tmpfs` will be used instead. |
-| STORAGE_MOUNT_POINT  | /mnt/nvme                 | Local mount point to mount Storage or `tmpfs`.                  |
-| POSTGRES_PASSWORD    | postgres                  | Password for the PostgreSQL database.                           |
-| PGDATA               | /mnt/nvme/postgresql/data | PostgreSQL path on the Storage or `tmpfs` mount point.          |
-| NFS_MOUNT_POINT      | /mnt/nvme                 | NFS mount point to mount NFS export.                            |
-| NFS_HOST             | localhost                 | NFS host, should be `localhost` for the local container.        |
+| Environment Variable | Value                     | Description                                                                       |
+| -------------------- | ------------------------- | --------------------------------------------------------------------------------- |
+| STORAGE_LABEL        | storage                   | External Storage ID, if not found `tmpfs` will be used instead.                   |
+| STORAGE_MOUNT_POINT  | /mnt/nvme                 | Local mount point to mount Storage or `tmpfs`.                                    |
+| POSTGRES_PASSWORD    | postgres                  | Password for the PostgreSQL database.                                             |
+| PGDATA               | /mnt/nvme/postgresql/data | PostgreSQL path on the Storage or `tmpfs` mount point.                            |
+| NFS_MOUNT_POINT      | /                         | NFS mount point to mount NFS export. Set full path `/mnt/nvme` for NFS version 3. |
+| NFS_HOST             | localhost                 | NFS host, should be `localhost` for the local container.                          |
+| NFS_VERSION          | nfs4                      | Set `nfs` to use NFS version 3.                                                   |
 
 ## Feedback
 

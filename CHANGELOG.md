@@ -6,6 +6,7 @@
 
 - Fix some wording and typos in README (#5)
 - Update balena.yml according to README (#6)
+- Support NFS4 when available in balena (#7)
 
 ## 1.0.0 (2022-07-03)
 
