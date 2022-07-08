@@ -1,8 +1,9 @@
 FROM nginx:stable-alpine
 
 ## NFS
-ENV NFS_MOUNT_POINT=/
 ENV NFS_HOST=localhost
+ENV NFS_HOST_POINT=/
+ENV NFS_MOUNT_POINT=/mnt/nvme
 ENV NFS_VERSION=nfs4
 
 ## Grafana
