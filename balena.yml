@@ -16,8 +16,8 @@ post-provisioning: >-
 
   ### Requirements
 
-  - balenaOS 2.99.27+rev1 is required for NFS version 4.
-  - balenaOS 2.98 is required for NFS version 3.
+    - balenaOS 2.99.27+rev1 is required for NFS version 4.
+    - balenaOS 2.98 is required for NFS version 3.
 
   ## Features
 
