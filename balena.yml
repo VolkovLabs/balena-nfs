@@ -27,8 +27,9 @@ post-provisioning: >-
     - STORAGE_MOUNT_POINT (/mnt/nvme) - Local mount point to mount Storage or `tmpfs`.
     - POSTGRES_PASSWORD (postgres) - Password for the PostgreSQL database.
     - PGDATA (/mnt/nvme/postgresql/data) - PostgreSQL path on the Storage or `tmpfs` mount point.
-    - NFS_MOUNT_POINT (/mnt/nvme) - NFS mount point to mount NFS export.
+    - NFS_MOUNT_POINT (/) - NFS mount point to mount NFS export. Set full path `/mnt/nvme` for NFS version 3.
     - NFS_HOST (localhost) - NFS host, should be `localhost` for the local container.
+    - NFS_VERSION (nfs4) - Set `nfs` to use NFS version 3.
 
 assets:
   repository:
