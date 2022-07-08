@@ -25,6 +25,7 @@ post-provisioning: >-
     - Supports various environment variables to specify storage label, mount point, etc.
     - Includes a NFS Client build on top of the NGINX Alpine image using custom Entrypoint script to mount NFS export.
     - Provides Grafana Dashboard to manage running services and display configuration using Supervisor API. Default Grafana username and password is **admin/admin**.
+    - Supports NFS version 4 and version 3. NFS version 4 is set by default.
 
   ## Environment Variables
 
@@ -36,6 +37,12 @@ post-provisioning: >-
     - NFS_HOST_MOUNT  (/) - NFS exported mount. Set full path `/mnt/nvme` for NFS version 3.
     - NFS_MOUNT_POINT (/mnt/nvme) - Mount point to mount NFS export.
     - NFS_VERSION (nfs4) - Set `nfs` to use NFS version 3.
+
+  ### NFS version 3
+
+  To support NFS version 3 please update Environment Variables:
+
+  ![Diagram](https://raw.githubusercontent.com/volkovlabs/balena-nfs/main/img/env-nfsv3.png)
 
 assets:
   repository:
