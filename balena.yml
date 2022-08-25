@@ -11,7 +11,7 @@ post-provisioning: >-
 
   ![Diagram](https://raw.githubusercontent.com/volkovlabs/balena-nfs/main/img/balena-nfs.png)
 
-  [![Grafana 9](https://img.shields.io/badge/Grafana-9-orange)](https://www.grafana.com)
+  [![Grafana 9](https://img.shields.io/badge/Grafana-9.1.0-orange)](https://www.grafana.com)
   [![Balena](https://github.com/volkovlabs/balena-nfs/actions/workflows/balena.yml/badge.svg)](https://github.com/volkovlabs/balena-nfs/actions/workflows/balena.yml)
 
   ### Requirements
