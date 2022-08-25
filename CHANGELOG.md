@@ -1,5 +1,11 @@
 # Change Log
 
+## 1.2.0 (IN PROGRESS)
+
+### Features / Enhancements
+
+- Update to the latest Balena Application plugin ()
+
 ## 1.1.0 (2022-07-08)
 
 ### Breaking Changes
