@@ -4,7 +4,7 @@
 
 ### Features / Enhancements
 
-- Update to the latest Balena Application plugin ()
+- Update to the latest Balena Application plugin (#12)
 
 ## 1.1.0 (2022-07-08)
 
