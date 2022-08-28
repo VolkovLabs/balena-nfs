@@ -39,6 +39,7 @@ The Balena NFS project can be deployed directly to balenaCloud:
 | NFS_HOST             | localhost                 | NFS host, should be `localhost` for the local container.         |
 | NFS_HOST_MOUNT       | /                         | NFS exported mount. Set full path `/mnt/nvme` for NFS version 3. |
 | NFS_MOUNT_POINT      | /mnt/nvme                 | Mount point to mount NFS export.                                 |
+| NFS_SYNC_MODE        | async                     | Async or Sync mode.                                              |
 | NFS_VERSION          | nfs4                      | Set `nfs` to use NFS version 3.                                  |
 
 ### NFS version 3

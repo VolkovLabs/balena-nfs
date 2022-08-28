@@ -12,6 +12,11 @@ if [ -z "${STORAGE_MOUNT_POINT}" ]; then
     STORAGE_MOUNT_POINT=/mnt/nvme
 fi
 
+if [ -z "${NFS_SYNC_MODE}" ]; then
+    echo "Using the default (async) NFS_SYNC_MODE value"
+    NFS_SYNC_MODE=async
+fi
+
 echo "STORAGE_MOUNT_POINT=${STORAGE_MOUNT_POINT}"
 
 device=$(blkid | grep "LABEL=\"${STORAGE_LABEL}\"" | cut -d : -f 1)
@@ -42,7 +47,7 @@ fi
 echo "PGDATA=${PGDATA}"
 
 ## Export NFS Mount
-echo "${STORAGE_MOUNT_POINT} *(fsid=0,rw,sync,no_subtree_check,all_squash,anonuid=0,anongid=0)" > /etc/exports
+echo "${STORAGE_MOUNT_POINT} *(fsid=0,rw,${NFS_SYNC_MODE},no_subtree_check,all_squash,anonuid=0,anongid=0)" > /etc/exports
 
 modprobe nfs
 modprobe nfsd
