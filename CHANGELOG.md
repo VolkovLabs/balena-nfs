@@ -5,7 +5,7 @@
 ### Features / Enhancements
 
 - Update to the latest Balena Application plugin (#12)
-- Add NFS Sync mode environment variable and set to `async` ()
+- Add NFS Sync mode environment variable and set to `async` (#13)
 
 ## 1.1.0 (2022-07-08)
 
