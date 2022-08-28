@@ -1,5 +1,5 @@
 name: balena-nfs
-version: 1.1.0
+version: 1.2.0
 joinable: false
 type: sw.application
 description: >-
@@ -26,6 +26,7 @@ post-provisioning: >-
     - Includes a NFS Client build on top of the NGINX Alpine image using custom Entrypoint script to mount NFS export.
     - Provides Grafana Dashboard to manage running services and display configuration using Supervisor API. Default Grafana username and password is **admin/admin**.
     - Supports NFS version 4 and version 3. NFS version 4 is set by default.
+    - Allows to set NFS in `sync` or `async` modes.
 
   ## Environment Variables
 
@@ -36,6 +37,7 @@ post-provisioning: >-
     - NFS_HOST (localhost) - NFS host, should be `localhost` for the local container.
     - NFS_HOST_MOUNT  (/) - NFS exported mount. Set full path `/mnt/nvme` for NFS version 3.
     - NFS_MOUNT_POINT (/mnt/nvme) - Mount point to mount NFS export.
+    - NFS_SYNC_MODE (async) - Async or Sync mode.
     - NFS_VERSION (nfs4) - Set `nfs` to use NFS version 3.
 
   ### NFS version 3
@@ -60,6 +62,7 @@ data:
     - POSTGRES_PASSWORD: postgres
     - PGDATA: /mnt/nvme/postgresql/data
     - NFS_MOUNT_POINT: /mnt/nvme
+    - NFS_SYNC_MODE: async
     - NFS_HOST: localhost
   defaultDeviceType: jetson-xavier
   supportedDeviceTypes:

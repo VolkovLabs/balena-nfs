@@ -9,6 +9,8 @@
 
 The Balena NFS project demonstrates how to deploy the NFS Server and Client in balenaCloud. Read more in the Balena blog post, "[Using NFS Server to share external storage between containers](https://www.balena.io/blog/using-nfs-server-to-share-external-storage-between-containers-balena/)".
 
+[![Using Network File System (NFS) in Balena | Share external storage between containers](https://raw.githubusercontent.com/volkovlabs/balena-nfs/main/img/video.png)](https://youtu.be/_kyNSLeAT84)
+
 ### Requirements
 
 - balenaOS 2.99.27+rev1 is required for NFS version 4.
@@ -27,6 +29,7 @@ The Balena NFS project can be deployed directly to balenaCloud:
 - Includes a NFS Client build on top of the NGINX Alpine image using custom Entrypoint script to mount NFS export.
 - Provides Grafana Dashboard to manage running services and display configuration using Supervisor API. Default Grafana username and password is **admin/admin**.
 - Supports NFS version 4 and version 3. NFS version 4 is set by default.
+- Allows to set NFS in `sync` or `async` modes.
 
 ## Environment Variables
 
