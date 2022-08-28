@@ -7,6 +7,7 @@
 - Update to the latest Balena Application plugin (#12)
 - Add NFS Sync mode environment variable and set to `async` (#13)
 - Add YouTube video "Using Network File System (NFS) in Balena | Share external storage between containers" (#14)
+- Add Video to Balena App (#15)
 
 ## 1.1.0 (2022-07-08)
 
