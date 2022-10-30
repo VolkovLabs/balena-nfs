@@ -7,6 +7,7 @@
 - Update to the latest Balena Application (#16)
 - Update Workflow to use Node 16 (#16)
 - Update video thumbnail (#16)
+- Update NFS_VERSION to `nfs` to allows use version 3 on legacy NFS servers (#17)
 
 ## 1.2.0 (2022-08-28)
 
