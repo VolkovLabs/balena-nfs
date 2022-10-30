@@ -1,5 +1,5 @@
 name: balena-nfs
-version: 1.2.0
+version: 1.3.0
 joinable: false
 type: sw.application
 description: >-
@@ -33,6 +33,13 @@ post-provisioning: >-
     - Supports NFS version 4 and version 3. NFS version 4 is set by default.
     - Allows to set NFS in `sync` or `async` modes.
 
+  ## Tested
+
+    - Nvidia Jetson AGX Orin Devkit (jetson-agx-orin-devkit)
+    - Raspberry Pi4-64 (raspberrypi4-64)
+    - Jetson Xavier (jetson-xavier)
+    - x86-64 (genericx86-64-ext)
+
   ## Environment Variables
 
     - STORAGE_LABEL (storage) - External Storage ID, if not found `tmpfs` will be used instead.
@@ -50,6 +57,14 @@ post-provisioning: >-
   To support NFS version 3 please update Environment Variables:
 
   ![Diagram](https://raw.githubusercontent.com/volkovlabs/balena-nfs/main/img/env-nfsv3.png)
+
+  ## Balena Application
+
+  The [Balena Application](https://github.com/VolkovLabs/volkovlabs-balena-app) for Grafana allows to display device information and manage services using Balena Supervisor API.
+
+  Working in a productive alliance, Balena, Grafana, and the Balena Application plugin simplify managing a network of non-homogenous IoT devices.
+
+  ![Balena Application](https://raw.githubusercontent.com/volkovlabs/balena-nfs/main/img/balena-app.png)
 
 assets:
   repository:
