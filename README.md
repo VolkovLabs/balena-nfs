@@ -15,7 +15,7 @@ Read more in the Balena blog post, "[Using NFS Server to share external storage 
 
 ### Requirements
 
-- **balenaOS 2.105.10** is required for Nvidia Jetson AGX Orin Devkit with NFS version 4.
+- **balenaOS 2.105.19** is required for Nvidia Jetson AGX Orin Devkit with NFS version 4.
 - **balenaOS 2.99.27+rev1** is required for NFS version 4.
 - **balenaOS 2.98** is required for NFS version 3.
 
