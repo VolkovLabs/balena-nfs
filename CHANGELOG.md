@@ -1,5 +1,13 @@
 # Change Log
 
+## 1.3.0 (2022-10-30)
+
+### Features / Enhancements
+
+- Update to the latest Balena Application (#16)
+- Update Workflow to use Node 16 (#16)
+- Update video thumbnail (#16)
+
 ## 1.2.0 (2022-08-28)
 
 ### Features / Enhancements
