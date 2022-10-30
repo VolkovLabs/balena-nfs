@@ -20,8 +20,9 @@ post-provisioning: >-
 
   ### Requirements
 
-    - balenaOS 2.99.27+rev1 is required for NFS version 4.
-    - balenaOS 2.98 is required for NFS version 3.
+    - **balenaOS 2.105.10** is required for Nvidia Jetson AGX Orin Devkit with NFS version 4.
+    - **balenaOS 2.99.27+rev1** is required for NFS version 4.
+    - **balenaOS 2.98** is required for NFS version 3.
 
   ## Features
 
@@ -70,7 +71,9 @@ data:
     - NFS_MOUNT_POINT: /mnt/nvme
     - NFS_SYNC_MODE: async
     - NFS_VERSION: nfs
-  defaultDeviceType: jetson-xavier
+  defaultDeviceType: jetson-agx-orin-devkit
   supportedDeviceTypes:
+    - raspberrypi4-64
     - jetson-xavier
     - genericx86-64-ext
+    - jetson-agx-orin-devkit
