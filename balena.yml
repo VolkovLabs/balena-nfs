@@ -65,9 +65,11 @@ data:
     - STORAGE_MOUNT_POINT: /mnt/nvme
     - POSTGRES_PASSWORD: postgres
     - PGDATA: /mnt/nvme/postgresql/data
+    - NFS_HOST: localhost
+    - NFS_HOST_MOUNT: /
     - NFS_MOUNT_POINT: /mnt/nvme
     - NFS_SYNC_MODE: async
-    - NFS_HOST: localhost
+    - NFS_VERSION: nfs
   defaultDeviceType: jetson-xavier
   supportedDeviceTypes:
     - jetson-xavier

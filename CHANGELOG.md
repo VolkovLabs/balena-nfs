@@ -8,6 +8,7 @@
 - Update Workflow to use Node 16 (#16)
 - Update video thumbnail (#16)
 - Update NFS_VERSION to `nfs` to allows use version 3 on legacy NFS servers (#17)
+- Add NFS_HOST_MOUNT and NFS_VERSION to balena configuration (#18)
 
 ## 1.2.0 (2022-08-28)
 
