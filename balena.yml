@@ -7,12 +7,14 @@ description: >-
 post-provisioning: >-
   ![Diagram](https://raw.githubusercontent.com/volkovlabs/balena-nfs/main/img/balena-nfs.png)
 
-  [![Grafana 9](https://img.shields.io/badge/Grafana-9.1.0-orange)](https://www.grafana.com)
+  [![Grafana 9](https://img.shields.io/badge/Grafana-9.2.2-orange)](https://www.grafana.com)
   [![Balena](https://github.com/volkovlabs/balena-nfs/actions/workflows/balena.yml/badge.svg)](https://github.com/volkovlabs/balena-nfs/actions/workflows/balena.yml)
 
   ## Introduction
 
-  The Balena NFS project demonstrates how to deploy the NFS Server and Client in balenaCloud. Read more in the Balena blog post, "[Using NFS Server to share external storage between containers](https://www.balena.io/blog/using-nfs-server-to-share-external-storage-between-containers-balena/)".
+  The Balena NFS project demonstrates how to deploy the NFS Server and Client in balenaCloud.
+
+  Read more in the Balena blog post, "[Using NFS Server to share external storage between containers](https://www.balena.io/blog/using-nfs-server-to-share-external-storage-between-containers-balena/)".
 
   [![Using Network File System (NFS) in Balena | Share external storage between containers](https://raw.githubusercontent.com/volkovlabs/balena-nfs/main/img/video.png)](https://youtu.be/_kyNSLeAT84)
 
@@ -40,7 +42,7 @@ post-provisioning: >-
     - NFS_HOST_MOUNT  (/) - NFS exported mount. Set full path `/mnt/nvme` for NFS version 3.
     - NFS_MOUNT_POINT (/mnt/nvme) - Mount point to mount NFS export.
     - NFS_SYNC_MODE (async) - Async or Sync mode.
-    - NFS_VERSION (nfs4) - Set `nfs` to use NFS version 3.
+    - NFS_VERSION (nfs) - Set `nfs4` to force use NFS version 4.
 
   ### NFS version 3
 

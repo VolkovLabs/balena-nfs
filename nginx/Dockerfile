@@ -4,7 +4,7 @@ FROM nginx:stable-alpine
 ENV NFS_HOST=localhost
 ENV NFS_HOST_MOUNT=/
 ENV NFS_MOUNT_POINT=/mnt/nvme
-ENV NFS_VERSION=nfs4
+ENV NFS_VERSION=nfs
 
 ## Grafana
 ENV GRAFANA_HOST=localhost
