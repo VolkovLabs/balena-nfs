@@ -15,8 +15,9 @@ Read more in the Balena blog post, "[Using NFS Server to share external storage 
 
 ### Requirements
 
-- balenaOS 2.99.27+rev1 is required for NFS version 4.
-- balenaOS 2.98 is required for NFS version 3.
+- **balenaOS 2.105.10** is required for Nvidia Jetson AGX Orin Devkit with NFS version 4.
+- **balenaOS 2.99.27+rev1** is required for NFS version 4.
+- **balenaOS 2.98** is required for NFS version 3.
 
 ## balenaCloud
 
@@ -30,8 +31,15 @@ The Balena NFS project can be deployed directly to balenaCloud:
 - Supports various environment variables to specify storage label, mount point, etc.
 - Includes a NFS Client build on top of the NGINX Alpine image using custom Entrypoint script to mount NFS export.
 - Provides Grafana Dashboard to manage running services and display configuration using Supervisor API. Default Grafana username and password is **admin/admin**.
-- Supports NFS version 4 and version 3. NFS version 4 is set by default.
+- Supports NFS version 4 and version 3.
 - Allows to set NFS in `sync` or `async` modes.
+
+## Tested
+
+- Nvidia Jetson AGX Orin Devkit (jetson-agx-orin-devkit)
+- Raspberry Pi4-64 (raspberrypi4-64)
+- Jetson Xavier (jetson-xavier)
+- x86-64 (genericx86-64-ext)
 
 ## Environment Variables
 
