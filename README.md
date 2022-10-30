@@ -2,12 +2,14 @@
 
 ![Diagram](https://raw.githubusercontent.com/volkovlabs/balena-nfs/main/img/balena-nfs.png)
 
-[![Grafana 9](https://img.shields.io/badge/Grafana-9.1.0-orange)](https://www.grafana.com)
+[![Grafana 9](https://img.shields.io/badge/Grafana-9.2.2-orange)](https://www.grafana.com)
 [![Balena](https://github.com/volkovlabs/balena-nfs/actions/workflows/balena.yml/badge.svg)](https://github.com/volkovlabs/balena-nfs/actions/workflows/balena.yml)
 
 ## Introduction
 
-The Balena NFS project demonstrates how to deploy the NFS Server and Client in balenaCloud. Read more in the Balena blog post, "[Using NFS Server to share external storage between containers](https://www.balena.io/blog/using-nfs-server-to-share-external-storage-between-containers-balena/)".
+The Balena NFS project demonstrates how to deploy the NFS Server and Client in balenaCloud.
+
+Read more in the Balena blog post, "[Using NFS Server to share external storage between containers](https://www.balena.io/blog/using-nfs-server-to-share-external-storage-between-containers-balena/)".
 
 [![Using Network File System (NFS) in Balena | Share external storage between containers](https://raw.githubusercontent.com/volkovlabs/balena-nfs/main/img/video.png)](https://youtu.be/_kyNSLeAT84)
 
@@ -56,13 +58,8 @@ To support NFS version 3 please update Environment Variables:
 We love to hear from users, developers, and the whole community interested in this project. These are various ways to get in touch with us:
 
 - Ask a question, request a new feature, and file a bug with [GitHub issues](https://github.com/volkovlabs/balena-nfs/issues/new/choose).
+- Sponsor our open-source plugins for Grafana with [GitHub Sponsor](https://github.com/sponsors/VolkovLabs).
 - Star the repository to show your support.
-
-## Contributing
-
-- Fork the repository.
-- Find an issue to work on and submit a pull request.
-- Could not find an issue? Look for documentation, bugs, typos, and missing features.
 
 ## License
 
