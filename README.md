@@ -59,7 +59,15 @@ The Balena NFS project can be deployed directly to balenaCloud:
 
 To support NFS version 3 please update Environment Variables:
 
-![Diagram](https://raw.githubusercontent.com/volkovlabs/balena-nfs/main/img/env-nfsv3.png)
+![NFS3](https://raw.githubusercontent.com/volkovlabs/balena-nfs/main/img/env-nfsv3.png)
+
+## Balena Application
+
+The [Balena Application](https://github.com/VolkovLabs/volkovlabs-balena-app) for Grafana allows to display device information and manage services using Balena Supervisor API.
+
+Working in a productive alliance, Balena, Grafana, and the Balena Application plugin simplify managing a network of non-homogenous IoT devices.
+
+![Balena Application](https://raw.githubusercontent.com/volkovlabs/balena-nfs/main/img/balena-app.png)
 
 ## Feedback
 

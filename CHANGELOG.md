@@ -10,6 +10,7 @@
 - Update NFS_VERSION to `nfs` to allows use version 3 on legacy NFS servers (#17)
 - Add NFS_HOST_MOUNT and NFS_VERSION to balena configuration (#18)
 - Tested and updated to use Nvidia Jetson AGX Orin Devkit as default (#19)
+- Add Balena Application screenshot (#20)
 
 ## 1.2.0 (2022-08-28)
 
